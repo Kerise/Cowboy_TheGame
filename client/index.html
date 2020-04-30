@@ -1,0 +1,60 @@
+<!doctype html>
+
+<html lang="en">
+<head>
+
+  <meta charset="utf-8">
+
+  <title>Cowboy The Game</title>
+  <meta name="description" content="Click & Play">
+  <meta name="author" content="SitePoint">
+
+  <link rel="stylesheet" href="css/style.css">
+
+</head>
+
+<body>
+ <header>
+	<h1>Cowboy The Game</h1>
+ </header>
+
+ <div class="score-board">
+  <div id="user-label" class="badge">Player1</div>
+  <div id="computer-label" class="badge">Enemy</div>
+  <span id="user-score">0</span>:<span id="computer-score">0</span>
+</div>
+
+<div class="result">
+ <p>Enemy:</p>
+</div>
+<div class="chat-room">
+<ul id="action-message"></ul>
+<form id="chat-form">
+ <input id="chat" title="chat" autocomplete="off" />
+ <button id="say">Say</button>
+</form>
+</div>
+<div class="choices">
+ <div class="choice" id="reload">
+  <img src="images/reload.png" alt="">
+ </div>
+<div class="choice" id="shield">
+  <img src="images/shield.png" alt="">
+ </div>
+<div class="choice" id="aim">
+  <img src="images/aim.png" alt="">
+ </div>
+</div>
+<p id="bullets">1</p>
+<div class="ultimate" id="super">
+  <img src="images/super.png" alt="">
+ </div>
+<div class="wrapper">
+
+
+</div>
+<p id="enemy_bullets">Enemy bullets : 1</p>
+  <script src="/socket.io/socket.io.js"></script>
+  <script src="client.js"></script>
+</body>
+</html>
